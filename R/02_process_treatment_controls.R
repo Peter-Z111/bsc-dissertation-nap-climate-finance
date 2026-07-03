@@ -290,7 +290,7 @@ write.csv(cfu_10to24, "Data/cfu_final.csv", row.names = FALSE)
 
 # Overview ----------------------------------------------------------------
 
-meta   <- read_csv("Overview.csv")
+meta   <- read_csv("Data/Overview.csv")
 df     <- read_csv("Data/cfu_final.csv")
 
 meta <- meta %>%
