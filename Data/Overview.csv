@@ -1,0 +1,9 @@
+﻿Types,Variables,Variable Codes,Measures,Data Sources
+Outcome,Adaptation funding,funding_ad,USD million,CFU
+,Adaptation funding (logged),log_funding_ad,Logged,Transformed from CFU
+,Overlap funding,funding_multi,USD million,CFU
+,Overlap funding (logged),log_funding_multi,Logged,Transformed from CFU
+Treat,NAP submission,treat,Binary 0 or 1,NAP Central
+Control,Climate vulnerability,vul,Index score,ND-GAIN Vulnerability score
+,Institutional capacity,ins,Index score,ND-GAIN Readiness score
+,Political stability,pol,Index score,World Bank WGI
