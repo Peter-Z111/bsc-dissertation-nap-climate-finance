@@ -40,7 +40,7 @@ where `Y_it` is (logged) MCF funding for country *i* in year *t*, `γ_i` and `δ
 ```
 ├── R/         # data-processing and analysis scripts
 ├── Data/      # input data (see Data availability)
-├── output/    # figures and tables (event-study plot, regression tables)
+├── Output/    # figures and tables (event-study plot, regression tables)
 └── README.md
 ```
 
@@ -51,7 +51,7 @@ where `Y_it` is (logged) MCF funding for country *i* in year *t*, `γ_i` and `δ
 ```r
    install.packages(c("tidyverse", "fixest", "did", "bacondecomp", "panelView", "ggplot2"))
 ```
-3. Run the scripts in `R/` in order to rebuild the panel from `Data/`, estimate the models, and reproduce the figures and tables in `output/`.
+3. Run the scripts in `R/` in order to rebuild the panel from `Data/`, estimate the models, and reproduce the figures and tables in `Output/`.
 
 ## Data availability
 
