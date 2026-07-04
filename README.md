@@ -26,8 +26,8 @@ Y_it = μ + γ_i + δ_t + τ·NAP_it + β·X_it + ε_it
 where `Y_it` is (logged) MCF funding for country *i* in year *t*, `γ_i` and `δ_t` are country and year fixed effects, `τ` is the treatment effect of interest, and `X_it` are the time-varying covariates. Standard errors are clustered at the country level. Main results span six specifications (raw and logged).
 
 **Robustness checks**
-- **Event-study** specification (leads and lags) to test the parallel-trends assumption.
-- Staggered-adoption diagnostics: **Goodman-Bacon decomposition** (`bacondecomp`) and the **Callaway–Sant'Anna** group-time estimator (`did`), to guard against bias from heterogeneous treatment effects.
+- Event-study specification (leads and lags) to test the parallel-trends assumption.
+- Goodman-Bacon decomposition (`bacondecomp`) to examine how the two-way fixed effects estimate weights the underlying comparisons under staggered timing.
 
 ## Key results
 
