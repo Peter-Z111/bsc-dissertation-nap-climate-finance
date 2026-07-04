@@ -49,9 +49,13 @@ where `Y_it` is (logged) MCF funding for country *i* in year *t*, `γ_i` and `δ
 1. Open the project in R / RStudio (ideally via an `.Rproj` file so file paths stay relative).
 2. Install the packages used:
 ```r
-   install.packages(c("tidyverse", "fixest", "did", "bacondecomp", "panelView", "ggplot2"))
+   install.packages(c(
+  "tidyverse", "fixest", "did", "bacondecomp", "panelView",
+  "fect", "modelsummary", "texreg", "stargazer", "kableExtra",
+  "sjPlot", "sjmisc", "countrycode", "mice"
+))
 ```
-3. Run the scripts in `R/` in order to rebuild the panel from `Data/`, estimate the models, and reproduce the figures and tables in `Output/`.
+3. Run the scripts in `R/` in order to rebuild the panel from `Data/`, estimate the models, and reproduce the figures and tables. For output figures and tables see 'Output/'
 
 ## Data availability
 
