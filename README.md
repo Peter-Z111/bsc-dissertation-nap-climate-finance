@@ -23,7 +23,7 @@ Raw inputs are read from `Data/` (`cfu.csv`, `NAP.csv`). See "Data availability"
 Y_it = μ + γ_i + δ_t + τ·NAP_it + β·X_it + ε_it
 ```
 
-where `Y_it` is (logged) MCF funding for country *i* in year *t*, `γ_i` and `δ_t` are country and year fixed effects, `τ` is the treatment effect of interest, and `X_it` are the time-varying covariates. Standard errors are clustered at the country level. Main results span six specifications (raw and logged).
+where `Y_it` is (logged) MCF funding for country *i* in year *t*, `γ_i` and `δ_t` are country and year fixed effects, `τ` is the TWFE coefficient of interest; under heterogeneous treatment effects, it need not equal a simple average treatment effect on the treated. `X_it` are the time-varying covariates. Standard errors are clustered at the country level. Main results span six specifications (raw and logged).
 
 **Diagnostics and event-study analysis**
 - Event-study specification (leads and lags) to examine pre-treatment trends and dynamic effects.
@@ -32,8 +32,8 @@ where `Y_it` is (logged) MCF funding for country *i* in year *t*, `γ_i` and `δ
 ## Key results
 
 - NAP submission is associated with a **statistically significant increase in dedicated adaptation funding**: around **19–21% in the logged models** (specifications 4–5), rising to **~46% once country-specific time trends are added** (specification 6, *p* < 0.05).
-- It is also associated with a significant **~24% reduction in overlap (multi-focus) funding**.
-- Interpretation: NAPs appear to unlock dedicated adaptation finance by signalling a country's needs and institutional readiness, but with a strategic trade-off away from integrated, multi-focus projects.
+- It is also associated with a significant **~21% reduction in overlap (multi-focus) funding**.
+- Interpretation: The estimates are consistent with higher dedicated adaptation funding and lower multi-focus funding after NAP submission. Their causal interpretation depends on the parallel-trends and no-anticipation assumptions, and the results do not by themselves establish a direct reallocation mechanism.
 
 ## Repository structure
 
